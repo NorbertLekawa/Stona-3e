@@ -1,0 +1,1021 @@
+body{
+  background-color: greenyellow;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  width: 100%;
+}
+
+header{
+  background-color: white;
+}
+
+nav{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo{
+  height: 90px;
+  padding: 15px;
+  padding-left: 20px;
+}
+
+p{
+  margin: 7px;
+}
+
+.navi{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 25px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+  font-size: 18px;
+}
+
+#hero1{
+  background-color: moccasin;
+  height: 777px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 400;
+  font-size: 46px;
+  padding-top: 50px;
+  color: black;
+}
+
+#hero_div{
+  margin-bottom: 30px;
+}
+
+#hello{
+  font-size: 86px;
+}
+
+figure{
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  height: 65%;
+  margin: 0px;
+}
+
+#hero2{
+  display: flex;
+  justify-content: space-between;
+}
+
+#people_img{
+  width: 35%;
+  padding-left: 10%;
+}
+
+
+.buttonHero {
+  height: 25px;
+  margin-top: 15px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: #ffb06e;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  color: black;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: all 1s ease;
+  }
+  
+.buttonHero:hover {
+  letter-spacing: 3px;
+  background-color: #fc692b;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #fc692b 0px 7px 29px 0px;
+  }
+  
+.buttonHero:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+  }
+
+#guy{
+  width: 15%;
+  padding-right: 11%;
+  padding-left: 8%;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#numbers{
+  background-color: #5fb0a9;
+  height: 310px;
+}
+
+h2{
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  height: 50px;
+}
+
+.row{
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1600px;
+}
+
+.number{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  flex-direction: column;
+  font-size: 68px;
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 50;
+}
+
+.numText{
+  font-size: 24px;
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+  display: flex;
+  text-align: center;
+}
+
+#adv{
+  height: 600px;
+  background-color: #018b96;
+  font-family: sans-serif;
+}
+
+.container .card .icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffb06e; /*kolor zewnętznej karty*/
+}
+
+.container .card .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  transform: translate(-50%, -50%);
+}
+
+.container .card .slide {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+  position: relative;
+  z-index: 1;
+  transition: .7s;
+  transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1{
+  transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .8s;
+  transform: translateY(-100px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  background-color: white; /*kolor dolnej karty*/
+}
+
+.container .card:hover .slide.slide2{
+  transform: translateY(0);
+}
+
+.container .card .slide.slide2::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  bottom: 15px;
+  left: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffb06e; /*kolor dolnej kreski*/
+}
+
+.container .card .slide.slide2 .content{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #414141; /*kolor dolnego tekstu*/
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+}
+
+.container .card .slide.slide2 .content h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
+  color: #414141; /*kolor nagłówka*/
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+} 
+
+#aboutUs{
+  height: 600px;
+  background-color: #007390;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+}
+
+h5{
+  font-size: 28px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.goals_div{
+  width: 73%;
+  list-style: none;
+}
+
+.goals{
+  list-style-image: url(Punktor.png);
+  margin: 0px;
+}
+
+.goal {
+  font-size: 26px;
+  margin: 22px;
+  transition: all 1s;
+}
+
+.goal:hover{
+  color: #fd3617;
+  font-size: 26.5px;
+}
+
+#lessons{
+  height: 600px;
+  background-color: #06346f;
+}
+
+.container2 {
+  width: 1800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  .card2 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+
+    .face {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+        
+      &.face1 {
+        box-sizing: border-box;
+        padding: 20px;
+
+        .online {
+          background-color: #FF00FF;
+        }
+
+        .time {
+          background-color: #00fffc;
+        }
+
+        .staff {
+          background-color: #FFFF00;
+        }
+
+        .libriary {
+          background-color: white;
+        }
+
+        .lessText{
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .lessTitel{
+          font-size: 32px;
+          font-family: "Noto Sans Bassa Vah", sans-serif;
+        }
+
+        .lessDes{
+          font-size: 20px;
+          font-family: "Noto Sans Bassa Vah", sans-serif;
+        }
+      }
+
+      &.face2 {
+        transition: 1s;
+
+        .image{
+          height: 160px;
+          transition: all 1s;
+        }
+      }
+    }
+  }
+
+  .card2:hover .face.face2 {
+    height: 60px;
+
+    .image{
+      height: 50px;
+    }
+  }
+
+  .face.face2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card2:nth-child(1) .face.face2 {
+    background-image: linear-gradient(
+      40deg,
+      #fd3617 0%,
+      #fc692b 45%,
+      #ffb06e 100%
+    );
+    border-radius: 15px;
+  }
+
+  .card2:nth-child(2) .face.face2 {
+    background-image: linear-gradient(
+      40deg,
+      #fd3617 0%,
+      #ffb06e 45%,
+      #fc692b
+    );
+    border-radius: 15px;
+  }
+
+  .card2:nth-child(3) .face.face2 {
+    background-image: linear-gradient(
+      140deg,
+      #ffb06e 0%,
+      #fc692b 45%,
+      #fd3617 100%
+    );
+    border-radius: 15px;
+  }
+
+  .card2:nth-child(4) .face.face2 {
+      background-image: linear-gradient(
+        140deg,
+        #fc692b 0%,
+        #ffb06e 45%,
+        #fd3617 100%
+      );
+      border-radius: 15px;
+    }
+}
+
+
+footer{
+  height: 400px;
+  background-color: #001d4f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contact{
+  font-size: 24px;
+  font-family: "Noto Sans Bassa Vah", sans-serif;
+}
+
+.social-overlap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-50%);
+  padding-bottom: 50px;
+  padding-top: 120px;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+
+.social-bar {
+  display: flex;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 60px rgba(93, 70, 232, 0.15);
+  border: 1px solid#ebe9e9;
+}
+
+.iconpad {
+  padding: 12px 0;
+  width: 100%;
+}
+
+.mb-3, .my-3 {
+  margin-bottom: 1rem!important;
+}
+
+
+.social-icons a {
+  border-radius: 50px;
+  display: inline-block;
+  line-height: 60px;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 5px 25px rgba(93, 70, 232, 0.15);
+  margin: 15px 15px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+.slider-nav-item:before {
+  position: absolute;
+  content: "";
+  height: calc(100% + 16px);
+  width: calc(100% + 16px);
+  top: -8px;
+  left: -8px;
+  border-radius: 50%;
+  border: 1px solid rgba(132, 132, 164, 0.35);
+  animation: 1.5s linear 0s normal none infinite focuse;
+}
+
+
+.process-scetion .slider-nav-item {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+.process-scetion .slider-nav-item:after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 2px;
+  content: '';
+  width: 100%;
+  background: url(http://demo.themenio.com/ico/assets/images/line.png) repeat 0 0;
+  z-index: 0;
+  animation: slide 1s linear infinite; }
+
+.process-scetion .slider-nav-item:last-child:after {
+  display: none; }
+
+.social-icon{
+  height: 22px;
+  }
+
+
+/* kółeczka*/
+@keyframes focuse {
+0% {
+  transform: scale(0.8);
+  opacity: 1; }
+75% {
+  transform: scale(1.2);
+  opacity: 0; }
+100% {
+  transform: scale(1.2);
+  opacity: 0; } }
+@keyframes slide {
+from {
+  background-position: 0 0; }
+to {
+  background-position: 40px 0; } }
+
+
+/* ----------------------------------------------
+* Generated by Animista on 2019-9-24 11:37:28
+* Licensed under FreeBSD License.
+* See http://animista.net/license for more info. 
+* w: http://animista.net, t: @cssanimista
+* ---------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  
+  #logo{
+    height: 45px;
+    padding: 7.5px;
+    padding-left: 10px;
+  }
+  
+  p{
+    margin: 0;
+  }
+  
+  .navi{
+    width: 55%;
+    padding: 25px;
+  }
+  
+  a{
+    font-size: 6px;
+  }
+  
+  #hero1{
+    height: 250px;
+    font-weight: 200;
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  
+  #hero_div{
+    margin-bottom: 15px;
+  }
+  
+  #hello{
+    font-size: 26px;
+  }
+  
+  figure{
+    width: 95%;
+    height: 65%;
+    margin: 0px;
+  }
+  
+  #people_img{
+    width: 32%;
+    padding-left: 3%;
+  }
+  
+  .buttonHero {
+    height: 12px;
+    margin-top: 7px;
+    padding: 10px 8px;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 4px;
+    letter-spacing: 0.75px;
+    font-size: 7px;
+    }
+    
+  .buttonHero:hover {
+    letter-spacing: 1px;
+    box-shadow: #fc692b 0px 3px 14px 0px;
+    }
+    
+  .buttonHero:active {
+    letter-spacing: 1px;
+    transform: translateY(5px);
+    transition: 50ms;
+    }
+  
+  #guy{
+    width: 15%;
+    padding-right: 5%;
+    padding-left: 2%;
+  }
+  
+  section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  #numbers{
+    height: 155px;
+  }
+  
+  h2{
+    font-size: 13px;
+    margin-bottom: 20px;
+    height: 25px;
+  }
+  
+  .row{
+    height: 15px;
+    width: 85%;
+  }
+  
+  .number{
+    height: 15px;
+    font-size: 28px;
+    font-weight: 25;
+  }
+  
+  .numText{
+    font-size: 8px;
+  }
+  
+  #adv{
+    height: 200px;
+  }
+  
+  .container .card .icon .fa {
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    transform: translate(-50%, -50%);
+  }
+
+  .container .card .slide {
+    width: 80px;
+    height: 65px;
+  }
+  
+  .container .card .slide.slide1 {
+    transform: translateY(15px);
+  }
+  
+  .container .card:hover .slide.slide1{
+    transform: translateY(0px);
+  }
+  
+  .container .card .slide.slide2 {
+    padding: 10px;
+    transform: translateY(-50px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+  
+  .container .card .slide.slide2::after{
+    width: 15px;
+    height: 2px;
+    bottom: 7px;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .container .card .slide.slide2 .content{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container .card .slide.slide2 .content h3 {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 6px;
+  } 
+  
+  .container .card .slide.slide2 p {
+    font-size: 5px;
+  }
+
+  #aboutUs{
+    height: 450px;
+  }
+  
+  h5{
+    font-size: 14px;
+    margin: 0px;
+    margin-bottom: 7px;
+  }
+  
+  .goals_div{
+    width: 90%;
+    list-style: none;
+  }
+  
+  .goals{
+    list-style-image: url(Punktor.png);
+    margin: 0px;
+  }
+  
+  .goal {
+    font-size: 10px;
+    margin: 11px;
+    transition: all 1s;
+  }
+  
+  .goal:hover{
+    color: #fd3617;
+    font-size: 10.5px;
+  }
+  
+  #lessons{
+    height: 600px;
+    background-color: #06346f;
+  }
+  
+  .container2 {
+    width: 1800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+  
+    .card2 {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      margin: 0 auto;
+      background: #000;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  
+      .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+          
+        &.face1 {
+          box-sizing: border-box;
+          padding: 20px;
+  
+          .online {
+            background-color: #FF00FF;
+          }
+  
+          .time {
+            background-color: #00fffc;
+          }
+  
+          .staff {
+            background-color: #FFFF00;
+          }
+  
+          .libriary {
+            background-color: white;
+          }
+  
+          .lessText{
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+  
+          .lessTitel{
+            font-size: 32px;
+            font-family: "Noto Sans Bassa Vah", sans-serif;
+          }
+  
+          .lessDes{
+            font-size: 20px;
+            font-family: "Noto Sans Bassa Vah", sans-serif;
+          }
+        }
+  
+        &.face2 {
+          transition: 1s;
+  
+          .image{
+            height: 160px;
+            transition: all 1s;
+          }
+        }
+      }
+    }
+  
+    .card2:hover .face.face2 {
+      height: 60px;
+  
+      .image{
+        height: 50px;
+      }
+    }
+  
+    .face.face2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .card2:nth-child(1) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #fd3617 0%,
+        #fc692b 45%,
+        #ffb06e 100%
+      );
+      border-radius: 15px;
+    }
+  
+    .card2:nth-child(2) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #fd3617 0%,
+        #ffb06e 45%,
+        #fc692b
+      );
+      border-radius: 15px;
+    }
+  
+    .card2:nth-child(3) .face.face2 {
+      background-image: linear-gradient(
+        140deg,
+        #ffb06e 0%,
+        #fc692b 45%,
+        #fd3617 100%
+      );
+      border-radius: 15px;
+    }
+  
+    .card2:nth-child(4) .face.face2 {
+        background-image: linear-gradient(
+          140deg,
+          #fc692b 0%,
+          #ffb06e 45%,
+          #fd3617 100%
+        );
+        border-radius: 15px;
+      }
+  }
+  
+  
+  footer{
+    height: 400px;
+    background-color: #001d4f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .contact{
+    font-size: 24px;
+    font-family: "Noto Sans Bassa Vah", sans-serif;
+  }
+  
+  .social-overlap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(-50%);
+    padding-bottom: 50px;
+    padding-top: 120px;
+  }
+  
+  .justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+  }
+  
+  .justify-content-center {
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+  }
+  
+  .social-bar {
+    display: flex;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 60px rgba(93, 70, 232, 0.15);
+    border: 1px solid#ebe9e9;
+  }
+  
+  .iconpad {
+    padding: 12px 0;
+    width: 100%;
+  }
+  
+  .mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+  }
+  
+  
+  .social-icons a {
+    border-radius: 50px;
+    display: inline-block;
+    line-height: 60px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 5px 25px rgba(93, 70, 232, 0.15);
+    margin: 15px 15px;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  
+  .slider-nav-item:before {
+    position: absolute;
+    content: "";
+    height: calc(100% + 16px);
+    width: calc(100% + 16px);
+    top: -8px;
+    left: -8px;
+    border-radius: 50%;
+    border: 1px solid rgba(132, 132, 164, 0.35);
+    animation: 1.5s linear 0s normal none infinite focuse;
+  }
+  
+  
+  .process-scetion .slider-nav-item {
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .process-scetion .slider-nav-item:after {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    height: 2px;
+    content: '';
+    width: 100%;
+    background: url(http://demo.themenio.com/ico/assets/images/line.png) repeat 0 0;
+    z-index: 0;
+    animation: slide 1s linear infinite; }
+  
+  .process-scetion .slider-nav-item:last-child:after {
+    display: none; }
+  
+  .social-icon{
+    height: 22px;
+    }
+  
+  
+  /* kółeczka*/
+  @keyframes focuse {
+  0% {
+    transform: scale(0.8);
+    opacity: 1; }
+  75% {
+    transform: scale(1.2);
+    opacity: 0; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }
+  @keyframes slide {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 40px 0; } }
+}
+
+@media only screen and (min-width: 600px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 3 / span 6;}
+  .item5 {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .item1 {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
+}
