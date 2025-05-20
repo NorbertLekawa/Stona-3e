@@ -551,6 +551,11 @@ to {
 * w: http://animista.net, t: @cssanimista
 * ---------------------------------------------- */
 
+.sec1{
+  height: 1000px;
+  background-color: aqua;
+}
+
 @media only screen and (max-width: 600px) {
   
   #logo{
