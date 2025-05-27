@@ -1,4 +1,5 @@
 <?php
+session_start();
 $DATABASE_HOST = "localhost";
 $DATABASE_USER = "admin1";
 $DATABASE_PASS = "admin1";
