@@ -2,7 +2,7 @@
 $DATABASE_HOST = "localhost";
 $DATABASE_USER = "admin1";
 $DATABASE_PASS = "admin1";
-$DATABASE_NAME = "ekontakt";
+$DATABASE_NAME = "e3kontakt";
 $conn=mysqli_connect($DATABASE_HOST,$DATABASE_USER,$DATABASE_PASS,$DATABASE_NAME);
 
 if (mysqli_connect_errno()){
