@@ -8,9 +8,7 @@
 
 <section>
 <?php
-
-include "db-connection.php";
-
+include "db_connection.php";
 if(isset($_POST['login'], $_POST['haslo'])){
     $username=$_POST['login'];
     $password=$_POST['haslo'];
