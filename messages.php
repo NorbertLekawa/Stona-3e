@@ -18,7 +18,7 @@ if(isset($_POST['login'], $_POST['haslo'])){
     $username=stripcslashes($username);
     $password=stripcslashes($password);
 
-    $sql="SELECT * FROM uzytkownicy where login='$username' and haslo='$password'";
+    $sql="SELECT * FROM uzytkownicy WHERE login='$username' and haslo='$password'";
     $result=mysqli_query($conn, $sql);
     $count=mysqli_num_rows($result);
 
@@ -38,6 +38,7 @@ mysqli_close($conn);
 
 
 <?php
+/*
 
     include "db_connection.php";
 
@@ -53,3 +54,4 @@ mysqli_close($conn);
             echo "Brak danych";
         }
     }
+
