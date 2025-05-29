@@ -32,3 +32,24 @@ if(isset($_POST['login'], $_POST['haslo'])){
 mysqli_close($conn);
 ?>
 </section>
+
+
+
+
+
+<?php
+
+    include "db_connection.php";
+
+    if(isset($_SESSION["name"])){
+        $sql="SELECT id, imie, email, tekst FROM wiadomosci";
+        $result=mysqli_query($conn, $sql);
+
+        if(mysqli_num_rows($result)>0){
+            while($row=mysqli_fetch_assoc($result)){
+                echo "id: ".$row["id"]. " Name: ".$row["imie"]. " Surname: ".$row["email"]. " Text: ".$row["tekst"]."<br>";
+            }
+        }else{
+            echo "Brak danych";
+        }
+    }
