@@ -120,7 +120,7 @@ figure{
   padding-left: 8%;
 }
 
-section{
+.sec_main{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -133,14 +133,14 @@ section{
   height: 310px;
 }
 
-h2{
+.tittle{
   font-family: "Noto Sans Bassa Vah", sans-serif;
   font-size: 36px;
   margin-bottom: 40px;
   height: 50px;
 }
 
-.row{
+.row_main{
   height: 160px;
   display: flex;
   flex-direction: row;
@@ -148,7 +148,7 @@ h2{
   width: 1600px;
 }
 
-.number{
+.num_main{
   height: 160px;
   display: flex;
   align-items: center;
@@ -551,10 +551,7 @@ to {
 * w: http://animista.net, t: @cssanimista
 * ---------------------------------------------- */
 
-.sec1{
-  height: 1000px;
-  background-color: aqua;
-}
+
 
 @media only screen and (max-width: 600px) {
   
@@ -629,7 +626,7 @@ to {
     padding-left: 2%;
   }
   
-  section{
+  .sec_main{
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -638,18 +635,18 @@ to {
     height: 155px;
   }
   
-  h2{
+  .tittle{
     font-size: 13px;
     margin-bottom: 20px;
     height: 25px;
   }
   
-  .row{
+  .row_main{
     height: 15px;
     width: 85%;
   }
   
-  .number{
+  .num_main{
     height: 15px;
     font-size: 28px;
     font-weight: 25;
