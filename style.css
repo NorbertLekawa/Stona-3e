@@ -338,6 +338,7 @@ h5{
         }
 
         .lessText{
+          background-clip: border-box;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
