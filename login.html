@@ -3,28 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mówi się - Szkoła językowa</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="login.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Sans+Bassa+Vah:wght@400..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
-    
 
+<!--HEADER-->
 <header>
-    <h1>Logowanie</h1>
-    <p>Zaloguj się, by zobaczyć wiadomości</p>
+    <nav>
+        <a href="index.html"><img id="logo" src="Logo.png" alt="Logo"></a>
+        <ul class="navi">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="O_nas.html">O NAS</a></li>
+            <li><a href="Kursy.html">KURSY JĘZYKOWE</a></li>
+            <li><a href="Kadra.html">KADRA</a></li>
+            <li><a href="Kontakt.html">KONTAKT</a></li>
+            <li><a href="login.html">KONTO</a></li>
+        </ul>
+    </nav>
 </header>
-<main>
-    <form action="messages.php" method="POST">
-        <label for="login">Login</label>
-        <input type="text" placeholder="np. Janusz" name="login" required>
-        <label for="password">Hasło</label>
-        <input type="password" placeholder="trudne hasło" name="haslo" required>
-        <input type="submit" name="submit" value="Zaloguj się">
 
+<!--HERO-->
+<div id="hero1">
+    <div id="hero_div">
+    <p class="willkommen">Hallo, einen schönen Tag!</p>
+    <p class="hello willkommen">Hello, have a nice day!</p>
+    <p class="willkommen">Hola, que tengas un buen día!</p>
+    </div>
+
+    <figure id="hero2">
+        <img id = "guy" src="Gosc.png" alt="">
+            <a class="buttonHero" href="">KURSY</a>
+            <a class="buttonHero" href="">O NAS</a>
+        <img id="people_img" src="Powitanie.png" alt="Ludzie mówiący cześć w rónych językach">
+    </figure>
+</div>
+
+<!--LOGOWANIE-->
+<section class="sec_login">
+    <h2 class="tittle">Logowanie</h2>
+    <p class="text">Zaloguj się, by zobaczyć wiadomości</p>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
     </form>
+
+</section>
+
 </main>
 <footer>
-    <p>Wróć do formularza</p>
-    <a href="Kontakt.html">Powrót</a>
+    <h2 class="name">Szkoła językowa Mówi się</h2>
+        <p class="contact">Ul. Słoneczna 10, Kraków</p>
+        <p class="contact">Telefon: +48 123 456 789</p>
+        <p class="contact">Mail: Mowi_sie@gmail.com</p>
+
+        <div class="social-overlap process-scetion">
+            <div class="container">
+                <div class="justify-content-center">
+                    <div class="col-md-10">
+                        <div class="social-bar">
+                            <div class="social-icons mb-3 iconpad text-center">
+                                <a href="https://www.facebook.com" target="_blank" class="slider-nav-item"><img src="facebook.png" alt="" class="social-icon"></a>
+                                <a href="https://www.youtube.com" target="_blank" class="slider-nav-item"><img src="youtube.png" alt="" class="social-icon"></a>
+                                <a href="https://www.instagram.com" target="_blank" class="slider-nav-item"><img src="instagram.png" alt="" class="social-icon"></a>
+                                <a href="https://workspace.google.com/intl/pl/gmail/" target="_blank" class="slider-nav-item"><img src="mail.png" alt="" class="social-icon"></a>
+                                <a href="https://x.com" target="_blank" class="slider-nav-item"><img src="twitter-x.png" alt="" class="social-icon"></a>
+                                <a href="https://www.pinterest.com" target="_blank" class="slider-nav-item"><img src="pinterest.png" alt="" class="social-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div> 
 </footer>
 
 </body>

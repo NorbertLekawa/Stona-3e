@@ -36,7 +36,6 @@ mysqli_close($conn);
 
 
 <?php
-/*
 
     include "db_connection.php";
 
