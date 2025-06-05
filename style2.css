@@ -341,7 +341,7 @@ footer{
   to {
     background-position: 40px 0; } }
 
-
+/*
   .sec_login{
     background-color: #080710;
     height: 800px;
@@ -349,6 +349,7 @@ footer{
     align-items: center;
     flex-direction: column;
   }
+  
   .background{
       width: 430px;
       height: 520px;

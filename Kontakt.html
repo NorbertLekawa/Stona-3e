@@ -21,7 +21,19 @@
         </nav>
     </header>
     <main>
-        <section class="sec1"></section>
+        <section class="sec1">
+
+            <form action="insert.php" method="POST">
+                <label for="name">Imię</label>
+                <input type="text" placeholder="np. Janusz" name="name" required>
+                <label for="mail">Mail</label>
+                <input type="text" placeholder="Mail" name="mail" required>
+                <label for="message">Wiadomość</label>
+                <textarea type="text" rows="6" placeholder="Napisz coś do nas..." name="message" required></textarea>
+                <input type="submit" name="submit" value="Wyślij">
+            </form>
+
+        </section>
     </main>
     <footer>
         <h2>Szkoła językowa Mówi się</h2>

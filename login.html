@@ -50,11 +50,22 @@
     <h2 class="tittle">Logowanie</h2>
     <p class="text">Zaloguj się, by zobaczyć wiadomości</p>
 
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
+    
+    <form action="messages.php" method="POST">
+        <label for="login">Login</label>
+        <input type="text" placeholder="np. Janusz" name="login" required>
+        <label for="password">Hasło</label>
+        <input type="password" placeholder="trudne hasło" name="haslo" required>
+        <input type="submit" name="submit" value="Zaloguj się">
+
+    </form>
+    <!---
     <form>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        
         <h3>Login Here</h3>
 
         <label for="username">Username</label>
@@ -69,7 +80,7 @@
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div>
     </form>
-
+-->
 </section>
 
 </main>
